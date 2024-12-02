@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <!-- Importation du fichier style.css et de la Police -->
+    <span id="base"></span>
+    <!-- Navbar -->
+    <div id="Navbar"></div>
+
+    <!-- Content -->
+
+    <!-- Formulaire -->
+    <div class="grid justify-center">
+      <form action="/pages/register/index.html" method="post">
+        <!-- Title -->
+        <h1 class="font-bold text-[100px] text-center mb-[67px]">Formulaire</h1>
+
+        <!-- Line 1 content -->
+
+        <!-- Name -->
+        <div id="1" class="flex mb-[67px]">
+          <div id="name" class="grid mb-[29px]">
+            <label class="font-bold text-3xl text-left text-black">Name</label>
+            <input
+              required
+              type="text"
+              name="name"
+              id="name-input"
+              placeholder="Dupont"
+              class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg placeholder:font-bold placeholder:text-3xl placeholder:text-left placeholder:text-black/50 text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+            />
+          </div>
+          <!-- First Name -->
+          <div id="first-name" class="grid mb-[29px] ml-[150px]">
+            <label class="font-bold text-3xl text-left text-black"
+              >First Name</label
+            >
+            <input
+              required
+              type="text"
+              name="First-Name"
+              id="first-name-input"
+              placeholder="Pierre"
+              class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg placeholder:font-bold placeholder:text-3xl placeholder:text-left placeholder:text-black/50 text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+            />
+          </div>
+        </div>
+
+        <!-- Line 2 content -->
+
+        <!-- Mail -->
+        <div id="2" class="flex mb-[67px]">
+          <div id="email" class="grid mb-[29px]">
+            <label class="font-bold text-3xl text-left text-black">Email</label>
+            <input
+              required
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="exemple@documento.com"
+              class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg placeholder:font-bold placeholder:text-3xl placeholder:text-left placeholder:text-black/50 text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+            />
+          </div>
+          <!-- Passxord -->
+          <div id="password" class="grid mb-[29px] ml-[150px]">
+            <label class="font-bold text-3xl text-left text-black"
+              >Password</label
+            >
+            <input
+              required
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Azertyuiop123@!"
+              class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg placeholder:font-bold placeholder:text-3xl placeholder:text-left placeholder:text-black/50 text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+            />
+          </div>
+        </div>
+
+        <!-- Line 3 content -->
+
+        <!-- Date -->
+        <div id="3" class="flex mb-[67px]">
+          <div id="name" class="grid mb-[29px]">
+            <label class="font-bold text-3xl text-left text-black"
+              >Date of Birth</label
+            >
+            <input
+              required
+              type="date"
+              name="date"
+              id="date"
+              placeholder="JJ/MM/AAAA"
+              class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+            />
+          </div>
+          <!-- Gender -->
+          <div id="gender" class="grid mb-[29px] ml-[150px]">
+            <label
+              for="gender-select"
+              class="font-bold text-3xl text-left text-black mb-2"
+              >Gender</label
+            >
+            <div class="relative">
+              <select
+                required
+                name="gender"
+                id="gender-select"
+                class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF] block appearance-none bg-gray-100 px-4 py-2"
+              >
+                <option value="" disabled selected>--Please Select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="no-binary">No Binary</option>
+              </select>
+              <!-- Ajout de la flèche personnalisée -->
+              <span
+                class="absolute inset-y-0 right-5 flex items-center pointer-events-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-black"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Button Register-->
+        <div id="button-register" class="mt-[78px] text- flex justify-center">
+          <input
+            value="Validate"
+            type="submit"
+            class="w-[311px] h-[92px] bg-[#C28FFF] border-2 border-[#9F5FCE] rounded-[20px] shadow-lg hover:shadow-2xl transition-all duration-300 border-dashed font-bold text-5xl mb-[100px] active:scale-95"
+          />
+        </div>
+      </form>
+    </div>
+    <!-- Importation de base.html  -->
+    <script src="/script.js"></script>
+  </body>
+</html>

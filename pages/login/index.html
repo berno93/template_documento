@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- Importation du fichier style.css et de la Police -->
+    <span id="base"></span>
+    <!-- Navbar -->
+    <div id="Navbar"></div>
+
+    <!-- Content -->
+
+    <div class="grid justify-center">
+      <!-- Logo -->
+      <div class="flex justify-center pt-[67px] pb-[78px]">
+        <a href="/Pages/Login/index.html">
+          <svg
+            width="300"
+            height="145"
+            viewBox="0 0 285 304"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g filter="url(#filter0_ddd_43_242)">
+              <rect
+                x="14"
+                y="12"
+                width="257"
+                height="276"
+                rx="4"
+                fill="white"
+              />
+              <rect
+                x="14"
+                y="12"
+                width="257"
+                height="276"
+                rx="4"
+                fill="url(#pattern0_43_242)"
+              />
+              <rect
+                x="10"
+                y="8"
+                width="265"
+                height="284"
+                rx="8"
+                stroke="white"
+                stroke-width="8"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_ddd_43_242"
+                x="0"
+                y="0"
+                width="285"
+                height="304"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="2" />
+                <feGaussianBlur stdDeviation="3" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_43_242"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset />
+                <feGaussianBlur stdDeviation="1" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="effect1_dropShadow_43_242"
+                  result="effect2_dropShadow_43_242"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feMorphology
+                  radius="1"
+                  operator="dilate"
+                  in="SourceAlpha"
+                  result="effect3_dropShadow_43_242"
+                />
+                <feOffset />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="effect2_dropShadow_43_242"
+                  result="effect3_dropShadow_43_242"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect3_dropShadow_43_242"
+                  result="shape"
+                />
+              </filter>
+              <pattern
+                id="pattern0_43_242"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_43_242"
+                  transform="scale(0.00689655 0.00724638)"
+                />
+              </pattern>
+              <image
+                id="image0_43_242"
+                width="145"
+                height="138"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Formulaire -->
+      <form action="/pages/login/index.html" method="post">
+        <!-- Mail -->
+        <div id="email-login" class="grid mb-[29px]">
+          <label class="font-bold text-3xl text-left text-black">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="mail-input-login"
+            placeholder="exemple@gmail.com"
+            class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg placeholder:font-bold placeholder:text-3xl placeholder:text-left placeholder:text-black/50 text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+          />
+        </div>
+        <!-- Password -->
+        <div id="password-login" class="mb-[37px] grid">
+          <label class="font-bold text-3xl text-left text-black"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password-input-login"
+            placeholder="Azertyuiop123!"
+            class="w-[583px] h-[100px] border-[3px] border-[#C28FFF] rounded-[20px] shadow-lg placeholder:font-bold placeholder:text-3xl placeholder:text-left placeholder:text-black/50 text-3xl text-left font-bold pl-14 pr-14 transition-all duration-300 hover:bg-[#C28FFF]"
+          />
+          <!-- Mot de passe oublié -->
+          <a
+            href=""
+            class="pt-[7px] font-bold text-[#1E1E1E]/50 underline text-xl"
+            >Forgot your password?</a
+          >
+        </div>
+        <!-- Remember me -->
+        <div id="remember-me" class="flex">
+          <!-- Button Remember me -->
+          <label class="custom-checkbox">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="pl-[11px] font-bold text-black">Remeber me</label>
+        </div>
+        <!-- Button Login -->
+        <div id="button-login" class="mt-[78px] flex justify-center">
+          <input
+            type="submit"
+            value="Login"
+            class="w-[311px] h-[92px] bg-[#C28FFF] border-2 border-[#9F5FCE] rounded-[20px] shadow-lg hover:shadow-2xl transition-all duration-300 border-dashed font-bold text-5xl mb-[100px] active:scale-95"
+          />
+        </div>
+      </form>
+    </div>
+    <!-- Importation de base.html  -->
+    <script src="/script.js"></script>
+  </body>
+</html>

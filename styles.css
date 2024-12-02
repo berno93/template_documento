@@ -1,0 +1,43 @@
+* {
+  font-family: Poppins, sans-serif;
+}
+
+/* body{
+    padding: 1px;
+} */
+
+/* Style de base pour le label */
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Cacher la case par défaut */
+.custom-checkbox input[type="checkbox"] {
+  opacity: 100;
+  position: absolute;
+}
+
+/* Styliser le conteneur de la checkbox */
+.custom-checkbox .checkmark {
+  width: 21px;
+  height: 21px;
+  background-color: #d9d9d9;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Ajouter le point violet à l'état coché */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #c28fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
